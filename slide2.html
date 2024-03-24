@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css" />
+    <script defer src="./static/change_slide_script.js"></script>
+    <script defer type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+          }
+        });
+      </script>
+          
+      <script defer type="text/javascript"
+              src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>      
+    <title>Slide 1</title>
+</head>
+<body class="slide--body">
+    <div class="background">
+        <img id="background" src="./static/pictures/background.jpg">
+        </img>
+    </div>
+    <p class="slide--title">How to insert images</p>
+    <div class="slide--content">
+    <p class="text">An image is inserted like this:</p>
+    <div class="picture">
+        <center>
+            <img class="picture" src="./static/pictures/Simon.png" 
+                alt="scheme of the quantum Fourier transformation"/>
+        </center>
+    </div>
+    <p class="text">Use the left and right arrow keys to navigate the lecture</p>
+    </div>
+    <div class="hidden">
+        <a id="previous" href="./index.html">here you get to slide 2</a>
+    </div>
+    <div class="hidden">
+        <a id="next" href="./slide3.html">here you get to slide 2</a>
+    </div>
+</body>
+</html>
