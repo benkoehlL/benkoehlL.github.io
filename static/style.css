@@ -21,22 +21,16 @@
     z-index: -10;
   }
 
+
+
 .slide--title{
-    font-size: 50px;
     color: var(--text-light);
     text-decoration: underline;
     margin-left: 2.5rem;
 }
 
-.slide--content{
-  width: 90%;
-  text-align: left;
-}
-
 ol, ul, .text, .code{
-    font-size: 30px;
     color: var(--text-light);
-    text-indent: 1rem;
 }
 
 ol, ul{
@@ -51,6 +45,34 @@ li{
     margin-bottom: 1rem;
 }
 
+
+@media(width<500px){
+    .slide--title{
+        font-size: 20px;
+    }
+    ol, ul, .text, .code{
+        font-size: 18px;
+        margin-left: 0rem;
+    }
+}
+
+@media(width>700px){
+    .slide--title{
+        font-size: 40px;
+    }
+    ol, ul, .text, .code{
+        font-size: 30px;
+    }
+}
+
+
+.slide--content{
+  width: 90%;
+  text-align: left;
+}
+
+
+
 .box{
     display: grid;
     margin: 3rem 0rem 5rem 0rem;
@@ -59,7 +81,7 @@ li{
 
 .code{
     width: 100%;
-    padding: 1rem 1rem 0rem -1rem;
+    padding: 1rem 1rem 1rem 1rem;
     background-color: #0006;
     display: flex;
     align-self: center;
