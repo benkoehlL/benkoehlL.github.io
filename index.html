@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/style.css" />
-    <script defer src="./static/change_slide_script.js"></script>
-    <script defer type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            processEscapes: true
-          }
-        });
-      </script>
-          
-      <script defer type="text/javascript"
-              src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-      </script>      
-    <title>Slide 1</title>
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;display=swap" rel="stylesheet">
+    <script defer src="./static/scripts/change_box.js"></script>
+    <title>Home</title>
 </head>
-<body class="slide--body">
-    <div class="background">
-        <img id="background" src="./static/pictures/background.jpg">
-        </img>
-    </div>
-    <p class="slide--title">How to add LaTex code</p>
-    <div class="slide--content">
-    <p class="text">You can even insert LaTex code like this:</p>
-    <div class="box">
-        <p class="code">$$\begin{aligned}
-            |j\rangle&=\frac{1}{\sqrt{N}}\sum\limits_{k=0}^{N-1}\mathrm{e}^{2\pi\mathrm{i}jk/N}|k\rangle\;&\text{(orthonormal basis)}\\
-            \sum\limits_{j=0}^{N-1}x_j|j\rangle&=\sum\limits_{k=0}^{N-1}y_k|k\rangle\;\text{with}\;y_k=\frac{1}{\sqrt{N}}\sum\limits_{j=0}^{N-1}x_j\mathrm{e}^{2\pi\mathrm{i}jk/N}\;&\text{(arbitrary state)}
-            \end{aligned}$$
-        </p>
-    </div>
-    <p class="text">Use the left and right arrow keys to navigate the lecture</p>
-    <div class="hidden">
-        <a id="next" href="./slide2.html">here you get to slide 2</a>
-    </div>
+<body>
+    <header class="header">
+        <nav style="display: flex; flex-direction: row;">
+            <a href="https://www.hs-nordhausen.de/"><img src="https://www.hs-nordhausen.de/fileadmin/template/pix/logo-hsn.svg"></a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="headding--container">
+            <img class="profile-pic" src="./static/pictures/profile_picture.svg">
+            <div>
+                <h1>Ingenieurmathematik</h1>
+                <h2>Dr. Benjamin Köhler <br>(Lehrkraft für besondere Aufgaben)</h2>
+                <h3>Raum 3/301 <br> &#128231; b.koehler@hs-nhs.de</h3>
+            </div>
+        </div>
+        <p>Ich die folgenden Vorlesungen, leite Seminare und Übungen zu den Themengebieten</p>
+        <span class="lectures--btn-container">
+            <button id="btn_IM_1_2" class="lecture--btn lecture-btn--active">Ingenieurmathematik I/II</button>
+            <button id="btn_IM_3_4" class="lecture--btn">Ingenieurmathematik III/IV</button>
+        </span>
+        <div id="box_IM_1_2" class="lecture--box">
+            <h2>Ingenieurmathematik I/II</h2>
+            <h3>Veranstaltungen</h3>
+            <ul>
+                <li>Vorlesungen Mo, Mi 9:30-11 Uhr, Raum 3/322</li>
+                <li>Übung Do 13:30-15 Uhr, Raum 3/105</li>
+                <li>Seminar Fr 11:30-13:00 Uhr, Raum 3/202</li>
+                <li>Sprechstunde Di 16-17 Uhr, Raum 3/301</li>
+            </ul>
+            <h3>Themen</h3>
+            <h4>Ingenieurmathematik I (WS)</h4>
+            <ul>
+                <li>Komplexe Zahlen</li>
+                <li>Reihen und Grenzwerte</li>
+                <li>Elementare Funktionen</li>
+                <li>Differenzialrechnung in einer und mehreren Variablen</li>
+            </ul>
+            <h4>Ingenieurmathematik II (SS)</h4>
+            <ul>
+                <li>Integralrechnung mit einer und mehreren Variablen</li>
+                <li>Analytische Geometrie und Vektoralgebra</li>
+                <li>Lineare Algebra</li>
+            </ul>
+        </div>
+
+        <div id="box_IM_3_4" class="lecture--box hidden">
+            <h2>Ingenieurmathematik III/IV</h2>
+            <h3>Veranstaltungen</h3>
+            <ul>
+                <li>Vorlesungen Mo, Mi 11:30-13:00 Uhr, Raum 3/322</li>
+                <li>Übung Do 15:30-17 Uhr, Raum 3/105</li>
+                <li>Seminar Fr 13:30-15:00 Uhr, Raum 3/202</li>
+                <li>Sprechstunde Di 15-16 Uhr, Raum 3/301</li>
+            </ul>
+            <h3>Themen</h3>
+            <h4>Ingenieurmathematik III (WS)</h4>
+            <ul>
+                <li>Vektoranalysis</li>
+                <li>Lösung gewöhnlicher und partieller Differenzialgleichungen</li>
+            </ul>
+            <h4>Ingenieurmathematik IV (SS)</h4>
+            <ul>
+                <li>Stochastik</li>
+                <li>Differenzialgeometrie</li>
+                <li>Funktionentheorie</li>
+            </ul>
+        </div>
+        
+    </main>
 </body>
 </html>

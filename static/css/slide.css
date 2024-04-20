@@ -21,8 +21,6 @@
     z-index: -10;
   }
 
-
-
 .slide--title{
     color: var(--text-light);
     text-decoration: underline;
@@ -70,8 +68,6 @@ li{
   width: 90%;
   text-align: left;
 }
-
-
 
 .box{
     display: grid;
