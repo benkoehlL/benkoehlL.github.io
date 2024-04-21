@@ -1,10 +1,21 @@
 body{
     display: flex; 
     flex-direction: column; 
-    width: 100%; 
+    /* width: 100%;  */
     align-items: center;
     background: #fff;
-    background: linear-gradient(to bottom right, #fcfcfc 0%, #ddd 100%);
+    /* background: linear-gradient(to bottom right, #fcfcfc 0%, #ddd 100%); */
+}
+
+.background {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background: linear-gradient(to bottom right, #fcfcfc 0%, #dadada 100%);
 }
 
 .header{
@@ -37,10 +48,7 @@ body{
 .profile-pic{
     height: 15rem; 
     margin-right: 2rem;
-}
-
-p{
-    padding: 0rem 2rem 0rem 5rem;
+    padding-left: 10rem;
 }
 
 .lecture--box{
@@ -84,6 +92,7 @@ p{
     
     p{
         font-size: 23px;
+        padding: 0rem 2rem 0rem 5rem;
     }
     
     ul{
@@ -126,6 +135,7 @@ p{
         display: flex;
         align-self: center;
         font-size: 25px;
+        padding-right: 2rem
     };
     
     h2{
@@ -141,8 +151,11 @@ p{
     }
     
     p{
-        font-size: 15px;
+        font-size: 17px;
+        padding-left: 3rem;
+        width: 150%;
     }
+    
     
     ul{
         line-height: 20px;
